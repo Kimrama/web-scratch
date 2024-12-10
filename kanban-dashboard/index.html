@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kanban</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 class="main-title">KANBAN DASHBOARD</h1>
+        <div class="drag-container">
+            <ul class="drag-list">
+                <li class="drag-column backlog">
+                    <span class="header"><h1>BACKLOG</h1></span>
+                    <div class="custom-scroll" id="backlog-content">
+                        <ul class="drag-item-list" id="backlog-list">
+                            <li class="drag-item" draggable="true">work 1</li>
+                            <li class="drag-item" draggable="true">work 2</li>
+                            <li class="drag-item" draggable="true">work 3</li>
+                            <li class="drag-item" draggable="true">work 4</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="drag-column progress">
+                    <span class="header"><h1>IN PROGRESS</h1></span>
+                    <div class="custom-scroll" id="progress-content">
+                        <ul class="drag-item-list" id="progress-list"></ul>
+                    </div>
+                </li>
+                <li class="drag-column validate">
+                    <span class="header"><h1>VALIDATE</h1></span>
+                    <div class="custom-scroll" id="validate-content">
+                        <ul class="drag-item-list" id="validate-list"></ul>
+                    </div>
+                </li>
+                <li class="drag-column done">
+                    <span class="header"><h1>DONE</h1></span>
+                    <div class="custom-scroll" id="done-content">
+                        <ul class="drag-item-list" id="done-list"></ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
